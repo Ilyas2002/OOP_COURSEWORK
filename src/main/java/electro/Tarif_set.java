@@ -7,7 +7,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class tarif_set implements ActionListener {
+public class Tarif_set implements ActionListener {
 
 	@SuppressWarnings("unchecked")
 	@Override

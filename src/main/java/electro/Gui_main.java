@@ -11,14 +11,14 @@ import javax.swing.JTextField;
 
 public class Gui_main {
 	private JComboBox<String> combo_tarif;
-	private JLabel labelTarif1 = new JLabel("Введите ваш расход:");
-	private JLabel labelTarif2d = new JLabel("Введите расход электроэнергии ДЕНЬ:");
-	private JLabel labelTarif2n = new JLabel("Введите расход электроэнергии НОЧЬ:");
+	private JLabel labelTarif1 = new JLabel("Р’РІРµРґРёС‚Рµ РІР°С€ СЂР°СЃС…РѕРґ:");
+	private JLabel labelTarif2d = new JLabel("Р’РІРµРґРёС‚Рµ СЂР°СЃС…РѕРґ СЌР»РµРєС‚СЂРѕСЌРЅРµСЂРіРёРё Р”Р•РќР¬:");
+	private JLabel labelTarif2n = new JLabel("Р’РІРµРґРёС‚Рµ СЂР°СЃС…РѕРґ СЌР»РµРєС‚СЂРѕСЌРЅРµСЂРіРёРё РќРћР§Р¬:");
 	private JLabel TextOutput = new JLabel("");
 	private JTextField ElectroData = new JTextField(10);
 	private JTextField ElectroData1 = new JTextField(10);
 	private JTextField ElectroData2 = new JTextField(10);
-	private String[] transfer = {"Однозонный тариф", "Двузонный тариф"};
+	private String[] transfer = {"РћРґРЅРѕР·РѕРЅРЅС‹Р№ С‚Р°СЂРёС„", "Р”РІСѓР·РѕРЅРЅС‹Р№ С‚Р°СЂРёС„"};
 	private JLabel[] arrayLabel= {labelTarif1,labelTarif2d,labelTarif2n};
 	private JTextField[] arrayTextField = {ElectroData,ElectroData1,ElectroData2};
 	private JFrame main_GUI;
@@ -41,11 +41,11 @@ public class Gui_main {
 	
 	combo_tarif = new JComboBox<String>(transfer);
 	combo_tarif.setBounds(30,40,150,30);
-	ActionListener tarif_set = new tarif_set();
+	ActionListener tarif_set = new Tarif_set();
 	combo_tarif.addActionListener(tarif_set);
 	main_panel.add(combo_tarif);
 	
-	JLabel labelOutput = new JLabel("Всего сумма к оплате:");
+	JLabel labelOutput = new JLabel("Р’СЃРµРіРѕ СЃСѓРјРјР° Рє РѕРїР»Р°С‚Рµ:");
 	labelOutput.setBounds(30,300,250,30);
 	main_panel.add(labelOutput);;
 	
@@ -54,13 +54,13 @@ public class Gui_main {
 	TextOutput.setEnabled(false);
 	main_panel.add(TextOutput);
 	
-	JButton button_create = new JButton("Расчет платы");
+	JButton button_create = new JButton("Р Р°СЃС‡РµС‚ РїР»Р°С‚С‹");
 	button_create.setBounds(20,400,150,40);
 	ActionListener actionCreate = new ListenerCalc();
 	button_create.addActionListener(actionCreate);
 	main_panel.add(button_create);
 	
-	JButton button_exit = new JButton("Выход");
+	JButton button_exit = new JButton("Р’С‹С…РѕРґ");
 	button_exit.setBounds(270,400,100,40);
 	ActionListener actionListener = new ListenerButton();
 	button_exit.addActionListener(actionListener); 

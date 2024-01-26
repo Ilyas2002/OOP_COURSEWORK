@@ -4,8 +4,8 @@ public class Main {
 	
 	protected static  Gui_main gui;
 	public static void main(String[] args) {
-		String name = "Калькулятор электроэнергии";
-		String label = "Введите данные необходимые для расчета";
+		String name = "РљР°Р»СЊРєСѓР»СЏС‚РѕСЂ СЌР»РµРєС‚СЂРѕСЌРЅРµСЂРіРёРё";
+		String label = "Р’РІРµРґРёС‚Рµ РґР°РЅРЅС‹Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РґР»СЏ СЂР°СЃС‡РµС‚Р°";
 		gui = new Gui_main(name,label);
 		
 	}

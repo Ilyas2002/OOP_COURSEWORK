@@ -23,7 +23,7 @@ public final class Two_tarif extends Calc {
 	
 	public String toString() {
 		
-		return String.valueOf(getSum())+ " руб.";
+		return String.valueOf(getSum())+ " СЂСѓР±.";
 	}
 	
 }
