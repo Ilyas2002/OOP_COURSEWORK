@@ -11,14 +11,14 @@ import javax.swing.JTextField;
 
 public class Gui_main {
 	private JComboBox<String> combo_tarif;
-	private JLabel labelTarif1 = new JLabel("Введите ваш расход:");
-	private JLabel labelTarif2d = new JLabel("Введите расход электроэнергии ДЕНЬ:");
-	private JLabel labelTarif2n = new JLabel("Введите расход электроэнергии НОЧЬ:");
+	private JLabel labelTarif1 = new JLabel("Выберите количество полок:");
+	private JLabel labelTarif2d = new JLabel("Введите количество полок:");
+	private JLabel labelTarif2n = new JLabel("Введите количество отделений:");
 	private JLabel TextOutput = new JLabel("");
 	private JTextField ElectroData = new JTextField(10);
 	private JTextField ElectroData1 = new JTextField(10);
 	private JTextField ElectroData2 = new JTextField(10);
-	private String[] transfer = {"Однозонный тариф", "Двузонный тариф"};
+	private String[] transfer = {"Тумбочка", "Шкаф"};
 	private JLabel[] arrayLabel= {labelTarif1,labelTarif2d,labelTarif2n};
 	private JTextField[] arrayTextField = {ElectroData,ElectroData1,ElectroData2};
 	private JFrame main_GUI;
