@@ -10,7 +10,7 @@ package electro;
 public abstract class Calc {
 	
 	/** The base tarif. */
-	private double baseTarif=3500;
+	private double baseTarif=3.5;
 	
 	/**
 	 * Mul.

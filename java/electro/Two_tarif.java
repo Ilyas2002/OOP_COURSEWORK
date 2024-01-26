@@ -11,9 +11,9 @@ public final class Two_tarif extends Calc {
 	
 	@Override
 	public void getMultiAll() {
-		setBaseTarif(4000);
+		setBaseTarif(2.5);
 		sum=mul(indication1,sum);
-		setBaseTarif(6000);
+		setBaseTarif(3.0);
 		sum=mul(indication2,sum);
 	}
 	
@@ -23,7 +23,7 @@ public final class Two_tarif extends Calc {
 	
 	public String toString() {
 		
-		return String.valueOf(getSum())+ " руб.";
+		return String.valueOf(getSum())+ " 000 руб.";
 	}
 	
 }
